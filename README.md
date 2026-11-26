@@ -1,1 +1,1 @@
-# omics-dashboard
+# Omics Data Visualizer
