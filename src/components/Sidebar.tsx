@@ -75,7 +75,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
             aria-hidden="true"
           />
           <span className="text-base font-bold tracking-tight text-zinc-900 whitespace-nowrap truncate">
-            OmicsLens
+            Omics Data Vizualization
           </span>
         </div>
         <button
@@ -109,7 +109,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
           >
             {datasets.map((ds) => (
               <option key={ds.id} value={ds.id}>
-                {ds.name} ({ds.omicsType})
+                {ds.name}
               </option>
             ))}
           </select>
@@ -122,11 +122,10 @@ export const Sidebar: React.FC<SidebarProps> = ({
             }}
             onDragLeave={() => setIsDragging(false)}
             onDrop={handleDrop}
-            className={`mt-3 rounded-md border border-dashed p-3.5 text-center transition-colors ${
-              isDragging
+            className={`mt-3 rounded-md border border-dashed p-3.5 text-center transition-colors ${isDragging
                 ? 'border-[#DB2777] bg-[#FDF2F8]'
                 : 'border-zinc-300 bg-zinc-50 hover:border-zinc-400'
-            }`}
+              }`}
           >
             <input
               ref={fileInputRef}
@@ -228,11 +227,10 @@ export const Sidebar: React.FC<SidebarProps> = ({
                     key={p}
                     type="button"
                     onClick={() => onUpdateThresholds({ pThreshold: p })}
-                    className={`py-1.5 text-xs font-mono tabular-nums rounded transition-colors whitespace-nowrap ${
-                      isActive
+                    className={`py-1.5 text-xs font-mono tabular-nums rounded transition-colors whitespace-nowrap ${isActive
                         ? 'bg-white text-[#BE185D] font-medium shadow-xs'
                         : 'text-zinc-600 hover:text-zinc-900'
-                    }`}
+                      }`}
                   >
                     &lt; {p}
                   </button>

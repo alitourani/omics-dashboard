@@ -1,6 +1,6 @@
 {
-  "name": "OmicsLens",
-  "description": "Static-ready Omics data visualization dashboard with gray-to-magenta visual encoding, client-side CSV/TSV/JSON ingestion, and Python REST API integration.",
+  "name": "OmicsDataViz",
+  "description": "A Sample Static-ready Omics data visualization dashboard with gray-to-magenta visual encoding, client-side CSV/TSV/JSON ingestion, and Python REST API integration.",
   "requestFramePermissions": [],
   "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
 }
